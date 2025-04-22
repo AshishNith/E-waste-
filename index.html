@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4CAF50',
+                        secondary: '#8BC34A',
+                        accent: '#FF9800',
+                        dark: '#2E7D32',
+                    },
+                    backgroundImage: {
+                        'hero': "url('https://media.istockphoto.com/id/1372577388/photo/old-electronic-devices-on-a-dark-background-the-concept-of-recycling-and-disposal-of.jpg?s=612x612&w=0&k=20&c=RGm3eCA76Y_IJJYGCLWS9acSR39Gb7iqsC_DIhJyG2g=  ')"
+                    }
+                }
+            }
+        }
+    </script>
+    <title>E-Waste Awareness</title>
+</head>
+<body class="bg-gray-50">
+    <header>
+        <nav class="fixed w-full bg-dark z-50">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <div class="text-white text-2xl font-bold">E-Waste Awareness</div>
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="#home" class="text-white hover:text-accent transition-colors">Home</a></li>
+                    <li><a href="#about" class="text-white hover:text-accent transition-colors">About</a></li>
+                    <li><a href="#impact" class="text-white hover:text-accent transition-colors">Impact</a></li>
+                    <li><a href="#recycling" class="text-white hover:text-accent transition-colors">Recycling</a></li>
+                    <li><a href="#contact" class="text-white hover:text-accent transition-colors">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="relative min-h-screen flex items-center justify-center text-white px-4">
+            <!-- Background image with overlay -->
+            <div class="absolute inset-0 bg-hero bg-cover bg-center bg-no-repeat">
+                <div class="absolute inset-0 bg-gradient-to-r from-dark/40 to-secondary/30"></div>
+            </div>
+            <!-- Content -->
+            <div class="relative text-center max-w-3xl mx-auto space-y-6">
+                <h1 class="text-4xl md:text-6xl font-bold animate-fadeIn">Think Before You Toss: Say No to E-Waste!</h1>
+                <p class="text-xl md:text-2xl">E-waste is the fastest-growing waste stream. Let's change that.</p>
+                <a href="#about" class="inline-block px-8 py-4 bg-accent hover:bg-accent/80 rounded-lg transition-colors text-white font-semibold">Join the Movement</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 px-4 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">What Exactly is E-Waste?</h2>
+                <div class="content">
+                    <p class="text-gray-600 text-center">E-waste refers to discarded electronic devices — from old phones and computers to batteries and TVs.</p>
+                    <div class="ewaste-types flex flex-wrap justify-center space-x-4 mt-6">
+                        <div class="type-item bg-primary text-white px-4 py-2 rounded-lg">📱 Mobile Phones</div>
+                        <div class="type-item bg-primary text-white px-4 py-2 rounded-lg">💻 Laptops</div>
+                        <div class="type-item bg-primary text-white px-4 py-2 rounded-lg">🔌 Chargers</div>
+                        <div class="type-item bg-primary text-white px-4 py-2 rounded-lg">📺 TVs</div>
+                        <div class="type-item bg-primary text-white px-4 py-2 rounded-lg">❄️ Refrigerators</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact" class="py-20 px-4 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">The Hidden Dangers of E-Waste</h2>
+                <div class="relative px-12">
+                    <button class="scroll-left absolute left-0 top-1/2 -translate-y-1/2 bg-dark text-white w-10 h-10 rounded-full opacity-80 hover:opacity-100 transition-opacity">←</button>
+                    <div class="impact-scroll flex items-center space-x-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide no-scrollbar py-4" style="-ms-overflow-style: none; scrollbar-width: none;">
+                        <div class="flex-none w-80 snap-start bg-white rounded-xl shadow-lg p-6 border-l-4 border-secondary hover:-translate-y-2 transition-transform">
+                            <h3 class="text-xl font-semibold mb-4">Environmental Impact</h3>
+                            <p class="text-gray-600">Toxic materials like lead and mercury pollute soil and water resources.</p>
+                        </div>
+                        <div class="flex-none w-80 snap-start bg-white rounded-xl shadow-lg p-6 border-l-4 border-secondary hover:-translate-y-2 transition-transform">
+                            <h3 class="text-xl font-semibold mb-4">Health Impact</h3>
+                            <p class="text-gray-600">Exposure to e-waste toxins can cause severe health issues in humans and animals.</p>
+                        </div>
+                        <div class="flex-none w-80 snap-start bg-white rounded-xl shadow-lg p-6 border-l-4 border-secondary hover:-translate-y-2 transition-transform">
+                            <h3 class="text-xl font-semibold mb-4">Social Impact</h3>
+                            <p class="text-gray-600">Workers in developing countries face hazardous conditions in informal recycling.</p>
+                        </div>
+                        <div class="flex-none w-80 snap-start bg-white rounded-xl shadow-lg p-6 border-l-4 border-secondary hover:-translate-y-2 transition-transform">
+                            <h3 class="text-xl font-semibold mb-4">Economic Impact</h3>
+                            <p class="text-gray-600">Improper e-waste disposal leads to loss of valuable recyclable materials.</p>
+                        </div>
+                        <div class="flex-none w-80 snap-start bg-white rounded-xl shadow-lg p-6 border-l-4 border-secondary hover:-translate-y-2 transition-transform">
+                            <h3 class="text-xl font-semibold mb-4">Resource Depletion</h3>
+                            <p class="text-gray-600">Failing to recycle e-waste increases demand for raw material extraction.</p>
+                        </div>
+                    </div>
+                    <button class="scroll-right absolute right-0 top-1/2 -translate-y-1/2 bg-dark text-white w-10 h-10 rounded-full opacity-80 hover:opacity-100 transition-opacity">→</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="recycling" class="py-20 px-4 bg-gray-50">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">What Happens to Your Old Electronics?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+                    <div class="step bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.pexels.com/photos/159397/solar-panel-array-power-sun-electricity-159397.jpeg" alt="Collection" class="w-full h-48 object-cover">
+                        <div class="p-6 text-center">
+                            <div class="step-number text-2xl font-bold text-primary mb-2">1</div>
+                            <h3 class="text-xl font-semibold mb-2">Collection</h3>
+                            <p class="text-gray-600">Devices are gathered at designated collection points</p>
+                        </div>
+                    </div>
+                    <div class="step bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg" alt="Sorting" class="w-full h-48 object-cover">
+                        <div class="p-6 text-center">
+                            <div class="step-number text-2xl font-bold text-primary mb-2">2</div>
+                            <h3 class="text-xl font-semibold mb-2">Sorting</h3>
+                            <p class="text-gray-600">Electronics are categorized by type and condition</p>
+                        </div>
+                    </div>
+                    <div class="step bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.pexels.com/photos/236089/pexels-photo-236089.jpeg" alt="Recovery" class="w-full h-48 object-cover">
+                        <div class="p-6 text-center">
+                            <div class="step-number text-2xl font-bold text-primary mb-2">3</div>
+                            <h3 class="text-xl font-semibold mb-2">Recovery</h3>
+                            <p class="text-gray-600">Valuable materials like gold and copper are extracted</p>
+                        </div>
+                    </div>
+                    <div class="step bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg" alt="Disposal" class="w-full h-48 object-cover">
+                        <div class="p-6 text-center">
+                            <div class="step-number text-2xl font-bold text-primary mb-2">4</div>
+                            <h3 class="text-xl font-semibold mb-2">Disposal</h3>
+                            <p class="text-gray-600">Harmful components are safely disposed of</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="facts" class="py-20 px-4 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Shocking Facts About E-Waste</h2>
+                <div class="facts-carousel flex items-center justify-center space-x-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide py-4">
+                    <div class="fact flex-none w-80 snap-start bg-white rounded-xl shadow-lg p-6 border-l-4 border-secondary hover:-translate-y-2 transition-transform">
+                        <p class="text-gray-600">Only 17.4% of e-waste is formally collected and recycled</p>
+                    </div>
+                    <div class="fact flex-none w-80 snap-start bg-white rounded-xl shadow-lg p-6 border-l-4 border-secondary hover:-translate-y-2 transition-transform">
+                        <p class="text-gray-600">Smartphones contain more gold per ton than gold ore</p>
+                    </div>
+                    <div class="fact flex-none w-80 snap-start bg-white rounded-xl shadow-lg p-6 border-l-4 border-secondary hover:-translate-y-2 transition-transform">
+                        <p class="text-gray-600">Annual e-waste weighs more than 125,000 Boeing 747s</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 px-4 bg-gray-50">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Connect With Us</h2>
+                <div class="contact-wrapper flex flex-col justify-center items-center gap-6">
+                    <div class="social-links flex items-center justify-center gap-6">
+                        <a href="#" class="social-link text-primary hover:text-accent transition-colors">Facebook</a>
+                        <a href="#" class="social-link text-primary hover:text-accent transition-colors">Twitter</a>
+                        <a href="#" class="social-link text-primary hover:text-accent transition-colors">Instagram</a>
+                    </div>
+                    <form id="contactForm" class="contact-form bg-white w-[60vw]  rounded-lg shadow-lg p-6 space-y-4">
+                        <input type="text" placeholder="Name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        <input type="email" placeholder="Email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        <textarea placeholder="Message" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        <button type="submit" class="w-full px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/80 transition-colors">Join the Movement</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-6 text-center">
+        <p>&copy; 2024 E-Waste Awareness Initiative. All rights reserved.</p>
+        <p>Designed and developed by kumari Abha Sharma. Bsc(Hons) Home science, Section - E</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
